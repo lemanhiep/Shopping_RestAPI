@@ -26,11 +26,13 @@ public class CategoryEntity implements Serializable {
     private String categoryName;
 
     @Column(name = "is_deleted")
-    private Boolean isDeleted = Boolean.FALSE;
+    private boolean isDeleted ;
 
     @Column(name = "category_parent_id")
     private Long categoryParentId;
 
     @Column(name = "is_active")
-    private Boolean isActive = Boolean.TRUE;
+    private boolean isActive = true;
+
+
 }
